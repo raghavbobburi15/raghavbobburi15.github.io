@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+                
+    <link rel="stylesheet" href="style.css">
+	<title>My Website</title>
+    <script src="https://kit.fontawesome.com/36255e4e2d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/raghav small.jpg" class="logo">
+            <ul id="side-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>I'm <span>Raghav Bobburi </span><br> Graduate Student at ASU <br> Ex-ServiceNow | NIT Allahabad</h1>
+
+        </div>
+    </div>
+</div>
+<!-----About------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me </h1>
+                <p>
+                    A Software Engineering professional graduated from NIT Allahabad. Passionate about enabling complex business problems through technology. I believe in creating simple solutions and view quality as a long-term compounding investment. I am experienced in working with financial products and distributed and scalable systems. 
+
+<br><br>I am pursuing a Master's in Computer Science to explore and learn this industry further. I am really looking forward to applying my analytical and technical skills to solve challenges and optimize processes in the software domain. Please feel free to reach me on LinkedIn or raghavbobburi@gmail.com.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills" >
+                    <ul>
+                        <li><span>ServiceNow Developer</span><br>Built SNow cloud based applications</li>
+                        <li><span>Full-Stack Developer</span><br>Built end-to-end web applications, using SpringBoot,FLask frameworks etc.</li>
+                        <li><span>Data Analyst</span><br>Deep analysis of data and then determining the best way to represent it visually to managers and stakeholders</li>                  
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>ServiceNow Developer</span><br>Built SNow cloud based applications</li>
+                        <li><span>Full-Stack Developer</span><br>Built end-to-end web applications, using SpringBoot,FLask frameworks etc.</li>
+                        <li><span>Data Analyst</span><br>Deep analysis of data and then determining the best way to represent it visually to managers and stakeholders</li>                  
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>ServiceNow Developer</span><br>Built SNow cloud based applications</li>
+                        <li><span>Full-Stack Developer</span><br>Built end-to-end web applications, using SpringBoot,FLask frameworks etc.</li>
+                        <li><span>Data Analyst</span><br>Deep analysis of data and then determining the best way to represent it visually to managers and stakeholders</li>                  
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+<!-----Projects----->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Flask Dashboard</h2>
+                <p>Developed a Flask web-based dashboard to visualize data from a Postgres database with four series
+                    (Temperature, pH, Distilled Oxygen, and Pressure) over time, allowing users to select a time window and
+                    download data as a CSV file. Used Docker to configure the project and Postgres database.</p>
+                <a target="_blank" rel="noopener noreferrer" href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-eye"></i>
+                <h2>Retinal detachment</h2>
+                <p>Developed a Flask web-based dashboard to visualize data from a Postgres database with four series
+                    (Temperature, pH, Distilled Oxygen, and Pressure) over time, allowing users to select a time window and
+                    download data as a CSV file. Used Docker to configure the project and Postgres database.</p>
+                <a target="_blank" rel="noopener noreferrer" href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Class Reservation system</h2>
+                <p>Created Use Case, Activity and Class diagrams (UML). Developed the web application using ReactJS for
+                    front-end, NodeJS for back-end with asynchronous APIs, and MongoDB as a database.</p>
+                <a target="_blank" rel="noopener noreferrer" href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-------My work-------->
+<div id="work">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="workdiv">
+                <img src="images/ServiceNow-Symbol.png" alt="">
+                <div class="layer">
+                    <h3>ServiceNow</h3>
+                    <h4>Software Development Engineer(Cloud)<br>   &emsp; &emsp; (July 2019 - July 2022)</h4><br>
+                    <p>• Instance Backup Size Estimation project: Developed a data-driven non-linear model, XGBoost, to
+                        estimate backup size, resulting in reduced retries and more optimized estimations.This optimization
+                        process reduced the consumption of backup servers by 15-20%.
+                    </p>
+                    <p> • Developed Persona Access Granting Automation (PAGA) application to enable application owners to
+                        manage access/security of their applications more efficiently and flexibly.Helped reduce the manual
+                        DevOps activities by 30%.</p>
+                    <a target="_blank" rel="noopener noreferrer" href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="workdiv">
+                <img src="images/CognizantLogo400-6.webp" alt="">
+                <div class="layer">
+                    <h3>Cognizant</h3>
+                    <h4>Associate (Full Stack Developer)<br>    &emsp; &emsp; (Aug 2018 - June 2019)</h4><br>
+                    <p>• Instance Backup Size Estimation project: Developed a data-driven non-linear model, XGBoost, to
+                        estimate backup size, resulting in reduced retries and more optimized estimations.This optimization
+                        process reduced the consumption of backup servers by 15-20%.
+                    </p>
+                    <p> • Developed Persona Access Granting Automation (PAGA) application to enable application owners to
+                        manage access/security of their applications more efficiently and flexibly.Helped reduce the manual
+                        DevOps activities by 30%.</p>
+                    <a target="_blank" rel="noopener noreferrer" href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!------Contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>  raghavbobburi@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>  Tempe,AZ</p>
+                <div class="social-icons">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/raghav-bobburi-398309a4/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/raghavbobburi15"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/raghav._.bobburi/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a target="_blank" rel="noopener noreferrer" href="images/my-cv.pdf" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right"> 
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tablink of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu= document.getElementById("side-menu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
